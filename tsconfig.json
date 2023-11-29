@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@controllers" : ["controllers/"],
+      "@exceptions" : ["exceptions/"],
+      "@handlers" : ["handlers/"],
+      "@middlewares" : ["middlewares/"],
+      "@routes" : ["routes/"],
+      "@services" :  ["services/"],
+      "@types" : ["types/"],
+      "@utils" : ["utils/"],
+    },
+    "target": "esnext",
+    "lib": ["esnext"],
+    "module": "commonjs",
+    "outDir": "./dist",
+    "typeRoots": ["./node_modules/@types"],
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": false,
+    "removeComments": true
+  },
+  "ts-node": {
+    "files": true,
+    "logError": true
+  }
+}
